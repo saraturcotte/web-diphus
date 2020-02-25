@@ -297,11 +297,11 @@
 
 $(function () {
     $(window).scroll(function () {
-        if ($(this).scrollTop() >300) {
-            $('.navbar .navbar-brand img').attr('src','images/Logo-DiPhUS-2.png');
-        }
-        if ($(this).scrollTop() < 300) {
+        if ($(this).scrollTop() >600) {
             $('.navbar .navbar-brand img').attr('src','images/blank-2.png');
+        }
+        if ($(this).scrollTop() < 600) {
+            $('.navbar .navbar-brand img').attr('src','images/Logo-DiPhUS-2.png');
         }
     })
 });
