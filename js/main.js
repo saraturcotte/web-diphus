@@ -300,7 +300,7 @@ $(function () {
 //         if ($(this).scrollTop() < 550) {
 //             $('.navbar .navbar-brand img').attr('src','images/blank-2.png');
 //         }
-        if ($(this).scrollTop() > 500) {
+        if ($(this).scrollTop() > 400) {
             $('.navbar .navbar-brand img').attr('src','images/Logo-DiPhUS-2.png');
         }
     })
