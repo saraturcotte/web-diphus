@@ -29,16 +29,24 @@
   <body>
    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     
-      <a class="navbar-brand" href="index.html"><div class="container"><img class="logo" src="images/Logo-DiPhUS-2.png" style="width:145px;height:80px;"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="index.html"><div class="container"><img class="logo" style="width:145px;height:80px;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active"><a href="index.html" class="nav-link">Accueil</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link">À propos</a></li>
-<!--           <li class="nav-item"><a href="projets.html" class="nav-link">Documents</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="portfolio.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">À propos</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown04">
+                  <a class="dropdown-item" href="about.html">Le comité</a>
+                  <a class="dropdown-item" href="https://calendar.google.com/calendar/embed?src=comite.diphus%40gmail.com&ctz=America%2FToronto" target="_blank">Agenda</a>
+                  <a class="dropdown-item" href="https://drive.google.com/open?id=14uRhcPxv98NON3OxJZiEelxf_UXjHk8H" target="_blank">Documents</a>
+                  <a class="dropdown-item" href="projets.html">Projets</a>
+                  <a class="dropdown-item" href="ress.html">Ressources</a>
+                </div>
+            </li><!--           <li class="nav-item"><a href="projets.html" class="nav-link">Documents</a></li>
  -->          <!-- <li class="nav-item dropdown"> -->
             <!-- <a class="nav-link dropdown-toggle" href="portfolio.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a> -->
 <!--               <div class="dropdown-menu" aria-labelledby="dropdown04">
@@ -48,15 +56,43 @@
           <!-- </li> -->
 <!--           <li class="nav-item"><a href="blog.html" class="nav-link">Case Studies</a></li>
  -->         <!--  <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li> -->
-          <li class="nav-item cta"><a href="contact.html" class="nav-link"><span>Contact</span></a></li>
+          <li class="nav-item cta"><a href="javascript:void(0)" onclick="openContact()" class="nav-link"><span>Contact</span></a></li>
           <li class="nav-item"><a href="ressen.html" class="nav-link">En</a></li>
         </ul>
       </div>
     </div>
   </nav>
     <!-- END nav -->
+
+
+    <!-- Contact overlay -->
+    <div id="contact-overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeContact()">&times;</a>
+      <div id="contact-infos">
+        <h2>Pour nous rejoindre</h2>
+        <div class="contact-item">
+          <span class="align-self-center icon-mail_outline"></span>
+          <a href="mailto:diphus@usherbrooke.ca">diphus@usherbrooke.ca</a>
+        </div>
+        <div class="contact-item">
+          <span class="align-self-center icon-twitter"></span>
+          <a href="https://twitter.com/CDiphus">@CDiphus</a>
+        </div>
+        <div class="contact-item">
+          <span class="align-self-center icon-facebook"></span>
+          <a href="https://facebook.com/DiPhUdeS">DiPhUdeS</a>
+        </div>
+<!--         <div class="contact-item">
+          <span class="align-self-center icon-sentiment_neutral"></span>
+          <a href="https://www.surveymonkey.com/r/DSZWLY5">La guarde du senti</a>
+        </div> -->
+      </div>
+    </div>
+
+
     
     <!-- <div class="js-fullheight"> -->
+
     <div class="hero-wrap js-fullheight">
       <div class="overlay"></div>
       <div id="particles-js"></div>
@@ -76,144 +112,14 @@
           <div class="row mt-5 d-flex justify-content-center">
             <div class="col-md-8 text-center heading-section ftco-animate">
 
-              <!-- <p><a href="#" class="btn btn-primary mt-3 py-3 px-5">Contactez-nous</a></p> -->
+              <p>Page en construction</p>
             </div>
           </div>
         </div>
       </section>
     </div>
 
-   <!--  <div class="ftco-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 text-center heading-section ftco-animate">
-            <span class="subheading">Équipe</span>
-            <h2 class="mb-4">Notre équipe</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 mb-5 ftco-animate">
-            <div class="block-10">
-              <div class="person-info mb-2">
-                <span class="name">Sara Turcotte</span>
-                <span class="position">Coordinatrice</span>
-              </div>
-              <img src="images/Sara.jpeg" alt="" class="img-fluid mb-3">
-              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-            </div>
-          </div>
-          <div class="col-md-4 mb-5 ftco-animate">
-            <div class="block-10">
-              <div class="person-info mb-2">
-                <span class="name">Chloé Gauvin-Ndiaye</span>
-                <span class="position">- </span>
-              </div>
-              <img src="images/Chloe.jpeg" alt="" class="img-fluid mb-3">
-              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-            </div>
-          </div>
-          <div class="col-md-4 mb-5 ftco-animate">
-            <div class="block-10">
-              <div class="person-info mb-2">
-                <span class="name">Marie-Eve Boulanger</span>
-                <span class="position">Lead Web Developer</span>
-              </div>
-              <img src="images/Marie-Eve.jpeg" alt="" class="img-fluid mb-3">
-              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-<!-- 
-    <section class="ftco-section testimony-section bg-light">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 text-center heading-section ftco-animate">
-            <span class="subheading">Customer Says</span>
-            <h2 class="mb-4">Our satisfied customer says</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
-          </div>
-        </div>
-        <div class="row ftco-animate">
-          <div class="col-md-12">
-            <div class="carousel-testimony owl-carousel ftco-owl">
-              <div class="item text-center">
-                <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text">
-                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Dennis Green</p>
-                    <span class="position">Marketing Manager</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item text-center">
-                <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img mb-4" style="background-image: url(images/person_2.jpg)">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text">
-                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Dennis Green</p>
-                    <span class="position">Interface Designer</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item text-center">
-                <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img mb-4" style="background-image: url(images/person_3.jpg)">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text">
-                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Dennis Green</p>
-                    <span class="position">UI Designer</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item text-center">
-                <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text">
-                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Dennis Green</p>
-                    <span class="position">Web Developer</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item text-center">
-                <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text">
-                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Dennis Green</p>
-                    <span class="position">System Analytics</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> 
-    </section>-->
+ 
     
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">

@@ -4,12 +4,12 @@
     <title>DiPhUS</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,700,800" rel="stylesheet">
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
-    
+
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
@@ -21,25 +21,34 @@
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/jquery.timepicker.css">
 
-    
+
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    
+
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-    
-      <a class="navbar-brand" href="indexen.html"><div class="container"><img class="logo" src="images/Logo-DiPhUS-2.png" style="width:145px;height:80px;"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+
+      <a class="navbar-brand" href="index.html"><div class="container"><img class="logo" style="width:145px;height:80px;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active"><a href="indexen.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="abouten.html" class="nav-link">About</a></li>
-<!--           <li class="nav-item"><a href="projets.html" class="nav-link">Documents</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="portfolio.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown04">
+                  <a class="dropdown-item" href="abouten.html">The committee</a>
+                  <a class="dropdown-item" href="https://calendar.google.com/calendar/embed?src=comite.diphus%40gmail.com&ctz=America%2FToronto" target="_blank">Agenda</a>
+                  <a class="dropdown-item" href="https://drive.google.com/open?id=14uRhcPxv98NON3OxJZiEelxf_UXjHk8H" target="_blank">Documents</a>
+                  <a class="dropdown-item" href="projetsen.html">Projects</a>
+                  <a class="dropdown-item" href="ressen.html">Ressources</a>
+                </div>
+            </li>
+            <!--           <li class="nav-item"><a href="projets.html" class="nav-link">Documents</a></li>
  -->          <!-- <li class="nav-item dropdown"> -->
             <!-- <a class="nav-link dropdown-toggle" href="portfolio.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a> -->
 <!--               <div class="dropdown-menu" aria-labelledby="dropdown04">
@@ -49,14 +58,39 @@
           <!-- </li> -->
 <!--           <li class="nav-item"><a href="blog.html" class="nav-link">Case Studies</a></li>
  -->         <!--  <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li> -->
-          <li class="nav-item cta"><a href="contacten.html" class="nav-link"><span>Contact</span></a></li>
+          <li class="nav-item cta"><a href="javascript:void(0)" onclick="openContact()" class="nav-link"><span>Contact</span></a></li>
           <li class="nav-item"><a href="about.html" class="nav-link">Fr</a></li>
         </ul>
       </div>
     </div>
   </nav>
     <!-- END nav -->
-    
+
+
+    <!-- Contact overlay -->
+    <div id="contact-overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeContact()">&times;</a>
+      <div id="contact-infos">
+        <h2>To contact us</h2>
+        <div class="contact-item">
+          <span class="align-self-center icon-mail_outline"></span>
+          <a href="mailto:diphus@usherbrooke.ca">diphus@usherbrooke.ca</a>
+        </div>
+        <div class="contact-item">
+          <span class="align-self-center icon-twitter"></span>
+          <a href="https://twitter.com/CDiphus">@CDiphus</a>
+        </div>
+        <div class="contact-item">
+          <span class="align-self-center icon-facebook"></span>
+          <a href="https://facebook.com/DiPhUdeS">DiPhUdeS</a>
+        </div>
+<!--         <div class="contact-item">
+          <span class="align-self-center icon-sentiment_neutral"></span>
+          <a href="https://www.surveymonkey.com/r/DSZWLY5">The gardian of feeling</a>
+        </div> -->
+      </div>
+    </div>
+
     <!-- <div class="js-fullheight"> -->
     <div class="hero-wrap js-fullheight">
       <div class="overlay"></div>
@@ -70,18 +104,13 @@
         </div>
       </div>
     </div>
-    
+
     <div class="bg-light">
       <section class="ftco-section-featured ftco-section-featured-2 ftco-animate">
         <div class="container-fluid" data-scrollax-parent="true">
           <div class="row mt-5 d-flex justify-content-center">
             <div class="col-md-8 text-center heading-section ftco-animate">
-<!--             <p align="justify"><b>À l’Université de Sherbrooke, les femmes composent 16% des effectifs étudiants en physique, du baccalauréat au postdoctorat. Malgré les progrès des dernières années, les femmes continuent d’être sous-représentées dans plusieurs domaines scientifiques. Le manque de diversité en science ne s’arrête cependant pas aux femmes : les personnes racisées, les personnes autochtones, celles appartenant à des minorités de genre ou d’orientation sexuelles, et les personnes avec un handicap font toutes faces à des obstacles particuliers dans leur cheminement vers une carrière scientifique, et les intersections de ces réalités mènent à des opportunités parfois encore plus réduites.</b></p>
-            <p align="justify"><b>
-            Né d’une initiative étudiante, le Comité pour la diversité en physique de l’Université de Sherbrooke (anciennement le Regroupement des femmes en physique de l’UdeS) a vu le jour à l’automne 2016. L’objectif principal de ce comité est de promouvoir la diversité en physique et en sciences. Plus concrètement, le Comité souhaite briser l’isolement des femmes et des personnes appartenant à des minorités qui poursuivent des études en physique ou travaillent dans ce domaine, et favoriser leur sentiment d’appartenance au Département de physique de l’UdeS. Par ailleurs, le Comité souhaite participer au recrutement des femmes et d’autres personnes sous-représentées en physique, en organisant des activités à saveur scientifique auprès des jeunes et en offrant des modèles féminins et diversifiés de succès en sciences. Le Comité veut également favoriser la rétention des cerveaux dans le domaine, le leadership, et la création de réseaux de contacts.</b></p>
 
-            <p align="justify"><b> Finalement, le Comité pour la Diversité en physique de l’UdeS a pour objectif de sensibiliser la population aux problèmatiques liées à la faible représentation des femmes et au manque de diversité en sciences et de contribuer à l’élimination des préjugés et des stéréotypes afin de créer un environnement favorable à l’avancement des connaissances pour tous.</b></p>
- -->
             <p align="justify"><b>At the Université de Sherbrooke, women make up 16% of the student body in physics, from the bachelor's degree to the postdoctorate level. Despite the progress made in recent years, women continue to be under-represented in several scientific fields. However, the lack of diversity in science does not stop at women: racialized people, Aboriginal people, people belonging to minorities of gender or sexual orientation, and people with disabilities all face particular obstacles in their path to a scientific career, and the intersections of these realities lead to opportunities that are sometimes even more limited.</b></p>
 
             <p align="justify"><b>Born out of a student initiative, the Comité pour la diversité en physique de l'Université de Sherbrooke (formerly the Regroupement des femmes en physique de l'UdeS) was formed in the fall of 2016. The main objective of this committee is to promote diversity in physics and science. More concretely, the Committee wishes to break the isolation of women and persons belonging to minorities who are studying or working in physics, and to foster their sense of belonging to the UdeS Physics Department. Furthermore, the Committee wishes to participate in the recruitment of women and other persons under-represented in physics by organizing activities with a scientific flavour for young people and by offering diverse female role models of success in science. The Committee also wants to promote brain retention in the field, leadership, and networking.</b></p>
@@ -103,7 +132,7 @@
           <div class="col-md-7 text-center heading-section ftco-animate">
             <span class="subheading">Team</span>
             <h2 class="mb-4">Our team</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+
           </div>
         </div>
         <div class="row">
@@ -177,10 +206,40 @@
               <!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p> -->
             </div>
           </div>
+          <div class="col-md-4 mb-5 ftco-animate">
+            <div class="block-10">
+              <div class="person-info mb-2">
+                <span class="name">Claude Rohrbacher</span>
+                <!-- <a href="mailto:chloe-aminata.gauvin-ndiaye@usherbrooke.ca"><span class="position">chloe-aminata.gauvin-ndiaye@usherbrooke.ca</span></a> -->
+              </div>
+              <img src="images/claude.png" alt="" class="img-fluid mb-3">
+              <!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p> -->
+            </div>
+          </div>
+          <div class="col-md-4 mb-5 ftco-animate">
+            <div class="block-10">
+              <div class="person-info mb-2">
+                <span class="name">André-Marie Tremblay</span>
+                <!-- <a href="mailto:chloe-aminata.gauvin-ndiaye@usherbrooke.ca"><span class="position">chloe-aminata.gauvin-ndiaye@usherbrooke.ca</span></a> -->
+              </div>
+              <img src="images/AMT.png" alt="" class="img-fluid mb-3">
+              <!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p> -->
+            </div>
+          </div>
+          <div class="col-md-4 mb-5 ftco-animate">
+            <div class="block-10">
+              <div class="person-info mb-2">
+                <span class="name">Eva Dupont-Ferrier</span>
+                <!-- <a href="mailto:chloe-aminata.gauvin-ndiaye@usherbrooke.ca"><span class="position">chloe-aminata.gauvin-ndiaye@usherbrooke.ca</span></a> -->
+              </div>
+              <img src="images/eva.png" alt="" class="img-fluid mb-3">
+              <!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p> -->
+            </div>
+          </div>
         </div>
       </div>
     </div>
-<!-- 
+<!--
     <section class="ftco-section testimony-section bg-light">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-5">
@@ -266,9 +325,9 @@
             </div>
           </div>
         </div>
-      </div> 
+      </div>
     </section>-->
-    
+
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
         <div class="row mb-5">
@@ -290,7 +349,7 @@
  -->                <!-- <li><a href="#" class="py-2 d-block">About</a></li> -->
                 <li><a href="projetsen.html" class="py-2 d-block">Projects</a></li>
                 <li><a href="contacten.html" class="py-2 d-block">Contact</a></li>
-                
+
 
               </ul>
             </div>
@@ -326,8 +385,8 @@
         </div>
       </div>
     </footer>
-    
-  
+
+
 
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
@@ -352,6 +411,6 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
-    
+
   </body>
 </html>
